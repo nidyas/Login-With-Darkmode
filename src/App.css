@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  --blue: linear-gradient(120deg,#282d31, #080608);
+  --white: linear-gradient(120deg,#2980b9, #8e44ad);
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  font-weight: var(--font-weight);
+  transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
+}
+
+body.light {
+  --background-color: var(--white);
+  --text-color: var(--blue);
+  --font-weight: 400;
+
+}
+
+body.dark {
+  --background-color: var(--blue);
+  --text-color: var(--black);
+  --font-weight: 500;
+
+}
